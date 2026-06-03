@@ -1,0 +1,151 @@
+/* ==========================================================================
+   1. ESTILOS GLOBALES Y VARIABLES
+   ========================================================================== */
+:root {
+    --bg-color: #f8f9fa;
+    --text-color: #212529;
+    --accent-color: #0066cc; /* Azul Figma / Tech */
+    --card-bg: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* ==========================================================================
+   2. HERO SECTION (ENCABEZADO TOTALMENTE CENTRADO)
+   ========================================================================== */
+.hero {
+    background-color: #1e1e1e;
+    color: white;
+    text-align: center;
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.hero .container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.hero h1 { 
+    margin: 0; 
+    font-size: 2.5rem; 
+    font-weight: 700;
+}
+
+.subtitle { 
+    font-size: 1.2rem; 
+    color: #a0a0a0; 
+    margin: 0.5rem 0; 
+}
+
+.tagline { 
+    max-width: 600px; 
+    margin: 1.5rem auto; 
+    font-size: 1.1rem; 
+}
+
+.contact-links {
+    margin-top: 1.5rem;
+    color: #a0a0a0;
+}
+
+.contact-links a { 
+    color: var(--accent-color); 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+.contact-links a:hover {
+    text-decoration: underline;
+}
+
+/* ==========================================================================
+   3. GRID DE PROYECTOS Y TARJETAS
+   ========================================================================== */
+main.container h2 {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    color: #1e1e1e;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.project-card {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efecto sutil al pasar el mouse por la tarjeta */
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.project-card h3 { 
+    margin-top: 0; 
+    margin-bottom: 0.75rem;
+    color: #1e1e1e; 
+    font-size: 1.3rem;
+}
+
+.project-card p {
+    color: #555;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.btn {
+    display: inline-block;
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    text-decoration: underline;
+}
+
+/* ==========================================================================
+   4. FOOTER
+   ========================================================================== */
+footer { 
+    text-align: center; 
+    padding: 4rem 2rem 2rem 2rem; 
+    color: #888; 
+    font-size: 0.9rem; 
+}
