@@ -1,225 +1,44 @@
-/* ==========================================================================
-   1. REGLAS GENERALES Y VARIABLES
-   ========================================================================== */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: #F8F9FA; color: #2D3748; line-height: 1.6; }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
 
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background-color: #F8F9FA; /* Un gris casi blanco muy suave para descansar la vista */
-    color: #2D3748;
-    line-height: 1.6;
-}
+/* Header y nuevos botones del Hero */
+.hero { background-color: #0F172A; color: #FFFFFF; padding: 80px 0; text-align: center; }
+.hero h1 { font-size: 36px; margin-bottom: 12px; }
+.hero .subtitle { font-size: 20px; color: #38BDF8; margin-bottom: 16px; }
+.hero .tagline { color: #94A3B8; max-width: 550px; margin: 0 auto 28px auto; }
+.contact-links { display: flex; justify-content: center; gap: 16px; margin-top: 24px; }
+.btn-hero { display: inline-flex; align-items: center; padding: 10px 20px; border-radius: 8px; font-weight: 600; text-decoration: none; transition: 0.3s; }
+.btn-cv { background-color: #38BDF8; color: #0F172A; }
+.btn-cv:hover { background-color: #fff; transform: translateY(-2px); }
+.btn-github { background-color: rgba(255,255,255,0.05); color: #ffffff; border: 1px solid rgba(255,255,255,0.2); }
+.btn-github:hover { background-color: rgba(255,255,255,0.15); }
 
-.container {
-    max-width: 850px;
-    margin: 0 auto;
-    padding: 0 24px;
-}
+/* Seccion Proyectos */
+.projects-section { padding: 60px 0; }
+.section-title { text-align: center; margin-bottom: 32px; font-size: 24px; }
+.optimized-project-card { background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; display: flex; flex-direction: column; overflow: hidden; }
+@media (min-width: 768px) { .optimized-project-card { flex-direction: row; } }
 
-/* ==========================================================================
-   2. HERO / ENCABEZADO (Suavizado y elegante)
-   ========================================================================== */
-.hero {
-    background-color: #0F172A; /* Azul oscuro profundo/premium en vez de negro puro */
-    color: #FFFFFF;
-    padding: 80px 0;
-    text-align: center;
-    border-bottom: 1px solid #1E293B;
-}
+.card-image-wrapper { background-color: #F8F9FA; display: flex; align-items: center; justify-content: center; width: 100%; padding: 40px; }
+@media (min-width: 768px) { .card-image-wrapper { width: 40%; } }
+.project-compact-img { max-width: 220px; width: 100%; border-radius: 8px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
 
-.hero-greeting {
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #94A3B8;
-    display: block;
-    margin-bottom: 8px;
-}
+.card-content-wrapper { padding: 40px; width: 100%; }
+@media (min-width: 768px) { .card-content-wrapper { width: 60%; } }
+.card-meta { display: flex; gap: 12px; margin-bottom: 16px; }
+.badge { background-color: #ECEAFF; color: #635BFF; font-size: 12px; padding: 4px 12px; border-radius: 20px; font-weight: 600; }
+.date { font-size: 13px; color: #718096; }
+.content-block h4 { font-size: 11px; text-transform: uppercase; color: #94A3B8; margin-bottom: 8px; }
+.project-narrative { font-size: 14.5px; margin-bottom: 24px; }
+.change-details-list { list-style: none; margin-bottom: 24px; padding-left: 0; }
+.change-details-list li { margin-bottom: 10px; font-size: 14px; }
 
-.hero h1 {
-    font-size: 36px;
-    font-weight: 700;
-    letter-spacing: -0.5px;
-    margin-bottom: 12px;
-}
-
-.hero .subtitle {
-    font-size: 20px;
-    font-weight: 500;
-    color: #38BDF8; /* Tono celeste UX/UI sutil */
-    margin-bottom: 16px;
-}
-
-.hero .tagline {
-    font-size: 16px;
-    color: #94A3B8;
-    max-width: 550px;
-    margin: 0 auto 28px auto;
-}
-
-/* Enlaces de contacto en el Hero */
-.contact-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    font-size: 15px;
-}
-
-.contact-links a {
-    color: #CBD5E1;
-    text-decoration: none;
-    transition: color 0.2s ease;
-}
-
-.contact-links a:hover {
-    color: #FFFFFF;
-}
-
-.contact-links .cv-btn {
-    background-color: rgba(255, 255, 255, 0.08);
-    padding: 8px 16px;
-    border-radius: 6px;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-}
-
-.contact-links .cv-btn:hover {
-    background-color: rgba(255, 255, 255, 0.15);
-}
-
-.contact-links .divider {
-    color: #475569;
-}
-
-/* ==========================================================================
-   3. SECCIÓN DE PROYECTOS Y TARJETA ÚNICA (Premium)
-   ========================================================================== */
-.projects-section {
-    padding: 60px 0;
-}
-
-.section-title {
-    font-size: 22px;
-    font-weight: 700;
-    color: #1E293B;
-    margin-bottom: 24px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-/* Diseño de la Tarjeta Estilo CV */
-.project-card {
-    background: #FFFFFF;
-    border: 1px solid #E2E8F0;
-    border-radius: 12px;
-    padding: 40px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.01);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
-}
-
-/* Metadata dentro de la tarjeta */
-.card-meta {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 16px;
-}
-
-.card-meta .badge {
-    background-color: #ECEAFF; /* El color lila de tu paleta */
-    color: #635BFF;            /* Tu azul/morado primario de Figma */
-    font-size: 12px;
-    font-weight: 600;
-    padding: 4px 12px;
-    border-radius: 20px;
-}
-
-.card-meta .date {
-    font-size: 13px;
-    color: #718096;
-    font-weight: 500;
-}
-
-.project-card h3 {
-    font-size: 24px;
-    color: #0F172A;
-    margin-bottom: 16px;
-    font-weight: 700;
-}
-
-.project-narrative {
-    font-size: 15px;
-    color: #4A5568;
-    line-height: 1.6;
-    margin-bottom: 32px;
-}
-
-/* ==========================================================================
-   4. BOTONES DE ACCIÓN (Estructura en línea)
-   ========================================================================== */
-.project-actions-group {
-    display: flex;
-    gap: 14px;
-    flex-wrap: wrap;
-}
-
+/* Botones azules de la tarjeta */
+.project-actions-group { display: flex; gap: 14px; }
 .btn {
-    padding: 12px 24px;
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 8px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.2s ease;
+    padding: 12px 24px; font-size: 14px; font-weight: 600; text-decoration: none; border-radius: 8px;
+    display: inline-flex; align-items: center; background-color: #635BFF; color: #FFFFFF !important; border: 1px solid #635BFF;
 }
-
-/* Botón Primario (Rediseño 2026 - Destacado) */
-.btn-primary {
-    background-color: #635BFF; /* Tu Color Primario */
-    color: #FFFFFF;
-    border: 1px solid #635BFF;
-    box-shadow: 0 4px 12px rgba(99, 91, 255, 0.15);
-}
-
-.btn-primary:hover {
-    background-color: #9B51E0; /* Tu color de acento morado al pasar el cursor */
-    border-color: #9B51E0;
-    box-shadow: 0 6px 16px rgba(155, 81, 224, 0.25);
-}
-
-/* Botón Secundario (Origen 2019 - Neutral) */
-.btn-secondary {
-    background-color: #FFFFFF;
-    color: #4A5568;
-    border: 1px solid #CBD5E1;
-}
-
-.btn-secondary:hover {
-    background-color: #F8F9FA;
-    color: #1F2937;
-    border-color: #94A3B8;
-}
-
-/* ==========================================================================
-   5. PIE DE PÁGINA
-   ========================================================================== */
-footer {
-    background-color: #FFFFFF;
-    border-top: 1px solid #E2E8F0;
-    padding: 32px 0;
-    text-align: center;
-    font-size: 14px;
-    color: #718096;
-    margin-top: 40px;
-}
+.btn:hover { background-color: #5048d9; border-color: #5048d9; }
+footer { text-align: center; padding: 40px; color: #718096; font-size: 14px; }
