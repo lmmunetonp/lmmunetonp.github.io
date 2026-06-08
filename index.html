@@ -16,12 +16,12 @@
             <p class="tagline">Ingeniero en Ciencias de la Computación especializado en diseño de páginas web, UX/UI y diseño de interacción. Cuento con una sólida base técnica que me permite estructurar flujos e interacciones que no solo son intuitivos, sino también viables a nivel de desarrollo.</p>
             
             <div class="contact-links">
-                <a href="https://drive.google.com/file/d/1XrufZMN0uI6W9oa9wswvwm9bze2-xTP1/view?usp=sharing" target="_blank" class="btn-hero btn-cv">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <a href="https://drive.google.com/file/d/1XrufZMN0uI6W9oa9wswvwm9bze2-xTP1/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-hero btn-cv">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
                     Ver CV (PDF)
                 </a>
-                <a href="https://github.com/lmmunetonp" target="_blank" class="btn-hero btn-github">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px;"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                <a href="https://github.com/lmmunetonp" target="_blank" rel="noopener noreferrer" class="btn-hero btn-github">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px;" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
                     GitHub
                 </a>
             </div>
@@ -31,9 +31,11 @@
     <main class="container">
         <section class="projects-section">
             <h2 class="section-title">Proyectos Destacados</h2>
+            
+            <!-- Tarjeta 1: MyBand App -->
             <div class="optimized-project-card">
                 <div class="card-image-wrapper">
-                    <img src="imag/MyBandPrev.png" alt="Evolución de la interfaz MyBand 2019 vs 2026" class="project-compact-img">
+                    <img src="imag/MyBandPrev.png" alt="Evolución de la interfaz MyBand 2019 vs 2026" class="project-compact-img" loading="lazy">
                 </div>
                 <div class="card-content-wrapper">
                     <div class="card-meta">
@@ -42,19 +44,125 @@
                     </div>
                     <h3>MyBand App: Rediseño Integral y Optimización</h3>
                     <div class="content-block">
-                        <h4>Descripción de alto nivel</h4>
+                        <h4>Descripción</h4>
                         <p class="project-narrative">Transformación completa de la experiencia móvil de MyBand. Este proyecto documenta el proceso de optimización de la interfaz, traduciendo un layout clásico de 2019, basado en bloques de color densos y estructuras rígidas hacia un sistema de diseño fluido, accesible y con una jerarquía visual limpia en 2026, optimizado para entornos de uso real.</p>
                     </div>
                     <div class="content-block">
-                        <h4>Detalles del cambio</h4>
+                        <h4>Detalles de Diseño y UX</h4>
                         <ul class="change-details-list">
-                            <li><strong>Mejoras de UI (Interfaz de Usuario):</strong> Paleta clara optimizada para uso nocturno con acentos vibrantes, iconos estandarizados con trazados finos; esquinas suaves y tipografía fluida.</li>
-                            <li><strong>Mejoras de UX (Experiencia de Usuario):</strong> Jerarquía visual más limpia para la gestión de eventos; simplificación de flujos lógicos y accesibilidad móvil mejorada.</li>
+                            <li><strong>Estrategia de Interfaz:</strong> Paleta clara optimizada para uso nocturno con acentos vibrantes, iconos estandarizados con trazados finos y esquinas suaves para mayor fluidez.</li>
+                            <li><strong>Arquitectura de Información:</strong> Jerarquía visual más limpia para la gestión de eventos complejos, simplificación de flujos lógicos y accesibilidad móvil mejorada.</li>
+                        </ul>
+                    </div>
+                    <div class="content-block">
+                        <h4>Detalles Técnicos y Desarrollo</h4>
+                        <ul class="change-details-list">
+                            <li><strong>Estructura del Sistema:</strong> Documentación y maquetación de flujos lógicos traducidos a componentes interactivos reutilizables con un enfoque centrado en la viabilidad técnica.</li>
                         </ul>
                     </div>
                     <div class="project-actions-group">
-                        <a href="https://www.figma.com/proto/UbY2f8ttZZOGUg1AMJUkgR/MyBand2019?t=M1OBMrjTgULp6ZXZ-1" target="_blank" class="btn btn-secondary">Ver Origen (2019) →</a>
-                        <a href="https://www.figma.com/proto/sdjtPXQbsetrt001sl57oq/MyBand2026?node-id=0-1&t=4xrKxumz3uqaXJu0-1" target="_blank" class="btn btn-primary">Ver Rediseño (2026) →</a>
+                        <a href="https://www.figma.com/proto/UbY2f8ttZZOGUg1AMJUkgR/MyBand2019?t=M1OBMrjTgULp6ZXZ-1" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Ver Origen (2019) →</a>
+                        <a href="https://www.figma.com/proto/sdjtPXQbsetrt001sl57oq/MyBand2026?node-id=0-1&t=4xrKxumz3uqaXJu0-1" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Ver Rediseño (2026) →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2: QuickClicker -->
+            <div class="optimized-project-card">
+                <div class="card-image-wrapper">
+                    <img src="imag/QuickClickerPrev.png" alt="Interfaz del proyecto QuickClicker" class="project-compact-img" loading="lazy">
+                </div>
+                <div class="card-content-wrapper">
+                    <div class="card-meta">
+                        <span class="badge">Desarrollo Web & Servicios</span>
+                        <span class="date">Proyecto de Portafolio</span>
+                    </div>
+                    <h3>QuickClicker: Generador Dinámico de Códigos QR</h3>
+                    <div class="content-block">
+                        <h4>Descripción</h4>
+                        <p class="project-narrative">Desarrollo e implementación de una aplicación web funcional orientada a la utilidad digital inmediata. QuickClicker es una herramienta ágil que permite la generación en tiempo real de códigos QR personalizados, diseñada bajo una filosofía de fricción mínima para el usuario y tiempos de respuesta instantáneos.</p>
+                    </div>
+                    <div class="content-block">
+                        <h4>Detalles de Diseño y UX</h4>
+                        <ul class="change-details-list">
+                            <li><strong>Patrones de Interacción:</strong> Interfaz limpia basada en micro-interacciones responsivas que guían el flujo de generación y descarga del archivo en un solo clic.</li>
+                        </ul>
+                    </div>
+                    <div class="content-block">
+                        <h4>Detalles Técnicos y Desarrollo</h4>
+                        <ul class="change-details-list">
+                            <li><strong>Stack e Implementación:</strong> Construido con HTML semántico estructurado, hojas de estilo CSS modulares y lógica de procesamiento asíncrono en JavaScript nativo.</li>
+                        </ul>
+                    </div>
+                    <div class="project-actions-group">
+                        <a href="https://github.com/lmmunetonp/instant-qr-generator" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Ver Repositorio en GitHub →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3: Simulador Junta de Agua La Regina (CORREGIDA) -->
+            <div class="optimized-project-card">
+                <div class="card-image-wrapper">
+                    <img src="imag/JuntaAguaPrev.png" alt="Interfaz del simulador de consumo de agua" class="project-compact-img" loading="lazy">
+                </div>
+                <div class="card-content-wrapper">
+                    <div class="card-meta">
+                        <span class="badge">Desarrollo Web & Utilidades</span>
+                        <span class="date">Proyecto Comunitario</span>
+                    </div>
+                    <h3>Simulador de Consumo: Junta de Agua La Regina</h3>
+                    <div class="content-block">
+                        <h4>Descripción</h4>
+                        <p class="project-narrative">Desarrollo de una aplicación web interactiva diseñada para la comunidad de La Regina, Julimes. Permite a los usuarios simular de forma transparente su consumo de agua estimando costos, e incluye un formulario de contacto directo para agilizar la comunicación y resolver dudas con la junta local.</p>
+                    </div>
+                    <div class="content-block">
+                        <h4>Detalles de Diseño y UX</h4>
+                        <ul class="change-details-list">
+                            <li><strong>Usabilidad Centrada en el Ciudadano:</strong> Diseño de formularios simplificados y controles visuales predictivos para que cualquier usuario pueda calcular su consumo e interactuar sin complicaciones.</li>
+                        </ul>
+                    </div>
+                    <div class="content-block">
+                        <h4>Detalles Técnicos y Desarrollo</h4>
+                        <ul class="change-details-list">
+                            <li><strong>Lógica e Implementación:</strong> Desarrollado con HTML estructural, estilos CSS limpios y algoritmos matemáticos en JavaScript nativo para procesar las variables de consumo instantáneamente.</li>
+                        </ul>
+                    </div>
+                    <div class="project-actions-group">
+                        <a href="https://github.com/lmmunetonp/water-consumption-simulator" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Ver Repositorio en GitHub →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 4: Mi Oficina -->
+            <div class="optimized-project-card">
+                <div class="card-image-wrapper">
+                    <img src="imag/MiOficinaPrev.png" alt="Propuesta visual dashboard Mi Oficina" class="project-compact-img" loading="lazy">
+                </div>
+                <div class="card-content-wrapper">
+                    <div class="card-meta">
+                        <span class="badge">Rediseño de Producto</span>
+                        <span class="date">Propuesta 2024</span>
+                    </div>
+                    <h3>Mi Oficina: Optimización de Dashboard "Al Día"</h3>
+                    <div class="content-block">
+                        <h4>Descripción</h4>
+                        <p class="project-narrative">Desarrollo de 3 propuestas de mejora visual para consolidar los indicadores críticos de gestión. El objetivo fue transformar la vista de inicio "Al Día" en una pantalla de alta densidad de información, permitiendo la toma de decisiones rápidas sin necesidad de navegación profunda.</p>
+                    </div>
+                    <div class="content-block">
+                        <h4>Detalles de Diseño y UX</h4>
+                        <ul class="change-details-list">
+                            <li><strong>Jerarquía Visual:</strong> Implementación de pesos tipográficos y contraste estratégico para priorizar los indicadores financieros clave.</li>
+                            <li><strong>Centralización de Datos:</strong> Integración limpia de métricas de ganancia, pendientes y saldos actuales en un único lienzo interactivo.</li>
+                        </ul>
+                    </div>
+                    <div class="content-block">
+                        <h4>Detalles Técnicos y Desarrollo</h4>
+                        <ul class="change-details-list">
+                            <li><strong>Estructura del Lienzo:</strong> Diseño de layouts de alta densidad de información estructurados de forma modular, listos para integrarse limpiamente con entornos de desarrollo frontend.</li>
+                        </ul>
+                    </div>
+                    <div class="project-actions-group">
+                        <a href="https://www.figma.com/proto/XYMrkfX8Wz9wAYgzBretNi/Redise%C3%B1o-MiOficina--copia-?node-id=133-4450&t=1DBlO3ITWiSiezr2-1" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Ver Propuesta de Diseño →</a>
                     </div>
                 </div>
             </div>
