@@ -3,208 +3,405 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luis Mario Muñetón | Experiencia de Usuario y Desarrollo Web</title>
+    <title>Luis Mario Muñetón | Portafolio</title>
+    <meta name="description" content="Portafolio de Luis Mario Muñetón Pando, Ingeniero en Ciencias de la Computación">
+
+    <meta property="og:title" content="Luis Mario Muñetón | UX Research & Frontend Engineering">
+    <meta property="og:description" content="Traduzco flujos lógicos y necesidades reales del usuario en interfaces web de alto impacto.">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230A0E18'/%3E%3Ctext x='32' y='42' font-family='monospace' font-size='28' font-weight='700' text-anchor='middle' fill='%2322D3EE'%3E%3C%2F%3E%3C%2Ftext%3E%3C%2Fsvg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="hero">
-        <div class="container">
-            <span class="hero-greeting">Hola, soy</span>
-            <h1>Luis Mario Muñetón Pando</h1>
-            <p class="subtitle">Experiencia de Usuario y Desarrollo Web</p>
-            <p class="tagline">Ingeniero en Ciencias de la Computación especializado en diseño de páginas web, UX/UI y diseño de interacción. Cuento con una sólida base técnica que me permite estructurar flujos e interacciones que no solo son intuitivos, sino también viables a nivel de desarrollo.</p>
-            
-            <div class="contact-links">
-                <a href="https://drive.google.com/file/d/1XrufZMN0uI6W9oa9wswvwm9bze2-xTP1/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-hero btn-cv">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-                    Ver CV (PDF)
-                </a>
-                <a href="https://github.com/lmmunetonp" target="_blank" rel="noopener noreferrer" class="btn-hero btn-github">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px;" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                    GitHub
-                </a>
+    <div class="gradient-bg-glow gradient-bg-glow--1"></div>
+    <div class="gradient-bg-glow gradient-bg-glow--2"></div>
+
+    <nav class="cli-nav">
+        <div class="container cli-nav-inner">
+            <a href="#inicio" class="cli-prompt">lm.munetonp<span class="cli-at">@</span>gmail.com<span class="cli-colon">:</span><span class="cli-path">~</span><span class="cli-dollar">$</span></a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="cliLinks">
+                <span></span><span></span><span></span>
+            </button>
+
+            <ul class="cli-links" id="cliLinks">
+                <li><a href="#inicio" class="nav-link active">inicio</a></li>
+                <li><a href="#proyectos" class="nav-link">proyectos</a></li>
+                <li><a href="#stack" class="nav-link">stack</a></li>
+                <li><a href="https://drive.google.com/file/d/1XrufZMN0uI6W9oa9wswvwm9bze2-xTP1/view?usp=sharing" target="_blank" rel="noopener noreferrer">cv</a></li>
+                <li><a href="https://github.com/lmmunetonp" target="_blank" rel="noopener noreferrer">github</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero-split" id="inicio">
+        <div class="container hero-grid">
+            <div class="hero-text-side">
+                <span class="hero-badge"><span class="pulse-dot"></span>Disponibilidad Inmediata</span>
+                <h1 class="gradient-text">Luis Mario Muñetón Pando</h1>
+                <p class="subtitle">Ingeniero en Ciencias de la Computación</p>
+                <p class="tagline">Diseño y dirijo sistemas inteligentes que resuelven retos reales. Gestiono la IA y la automatización junto con una sólida base de UX, creando productos digitales robustos, escalables y fáciles de usar.</p>
+
+                <div class="contact-actions">
+                    <a href="https://drive.google.com/file/d/1XrufZMN0uI6W9oa9wswvwm9bze2-xTP1/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-cyber btn-primary-cyber">
+                        <span>Ver CV Profesional</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    </a>
+                    <a href="https://github.com/lmmunetonp" target="_blank" rel="noopener noreferrer" class="btn-cyber btn-secondary-cyber">
+                        <span>GitHub Profile</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual-side">
+                <div class="mockup-terminal">
+                    <div class="terminal-header">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                        <span class="terminal-title">portafolio.js</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p class="code-line"><span class="comment">// perfil profesional</span></p>
+                        <p class="code-line"><span class="keyword">const</span> SoftwareEngineer = {</p>
+                        <p class="code-line indent">name: <span class="string">'Luis Mario Muñetón'</span>,</p>
+                        <p class="code-line indent">role: <span class="string">'UX/UI + Frontend Engineering'</span>,</p>
+                        <p class="code-line indent">core: [<span class="string">'Interaction Design'</span>,<span class="string">'Automation'</span>,<span class="string">'AI-Systems'</span>,<span class="string">'ScalableArchitectures'</span>],</p>
+                        <p class="code-line indent">metricsDriven: <span class="boolean">true</span></p>
+                        <p class="code-line">};</p>
+                        <p class="code-line"><span class="keyword">function</span> <span class="function">optimizeUX</span>(flows) {</p>
+                        <p class="code-line indent">return flows.map(f => f.toSeamlessCode());</p>
+                        <p class="code-line">}<span class="terminal-cursor"></span></p>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
 
-    <main class="container">
-        <section class="projects-section">
-            <h2 class="section-title">Proyectos Destacados</h2>
-            
-            <!-- Tarjeta 1: Papelería El Lápiz (NUEVA) -->
-            <div class="optimized-project-card">
-                <div class="card-image-wrapper">
-                    <img src="imag/PapeleriaLapizPrev.png" alt="Interfaz de la sitio web Papelería El Lápiz" class="project-compact-img" loading="lazy">
+    <div class="container">
+        <section class="filter-section" id="proyectos">
+            <span class="section-eyebrow">// 02. Experiencia profesional</span>
+            <h2 class="section-title">Portafolio de Proyectos</h2>
+            <div class="filter-group" role="group" aria-label="Filtrar proyectos por categoría">
+                <button class="filter-btn active" data-filter="all" aria-pressed="true">Todos</button>
+                <button class="filter-btn" data-filter="dev" aria-pressed="false">Desarrollo Web</button>
+                <button class="filter-btn" data-filter="ux" aria-pressed="false">UX / Rediseño</button>
+                <button class="filter-btn" data-filter="comunidad" aria-pressed="false">Impacto Local</button>
+            </div>
+        </section>
+
+        <section class="projects-grid" id="projects-container">
+
+            <div class="project-card-cyber" data-category="dev">
+                <div class="project-img-box" data-fallback="Papelería El Lápiz — vista previa no disponible">
+                    <img src="imag/PapeleriaLapizPrev.png" alt="Captura de pantalla del sitio web de Papelería El Lápiz" loading="lazy">
                 </div>
-                <div class="card-content-wrapper">
-                    <div class="card-meta">
-                        <span class="badge">Desarrollo Web Comercial</span>
-                        <span class="date">Proyecto Real - 2026</span>
+                <div class="project-info-box">
+                    <div class="card-badges">
+                        <span class="tag-badge badge-purple">Desarrollo Web Comercial</span>
+                        <span class="date-badge">2026</span>
                     </div>
                     <h3>Papelería y Tienda de Regalos El Lápiz</h3>
-                    <div class="content-block">
-                        <h4>Descripción</h4>
-                        <p class="project-narrative">Diseño y despliegue del sitio web oficial para un negocio local real de papelería y tienda de regalos. El objetivo principal de la plataforma es digitalizar la identidad del establecimiento, facilitando la consulta de servicios locales y mejorando el alcance comercial dentro de la comunidad.</p>
+                    <p class="project-desc">Diseño, maquetación limpia y despliegue automatizado del sitio web oficial para digitalizar la identidad de un negocio local real, maximizando su alcance comercial en la comunidad.</p>
+                    <div class="tech-tags-list">
+                        <span>HTML5 Semántico</span><span>CSS3 Modulares</span><span>GitHub Pages</span>
                     </div>
-                    <div class="content-block">
-                        <h4>Detalles de Diseño y UX</h4>
-                        <ul class="change-details-list">
-                            <li><strong>Arquitectura de Información Local:</strong> Estructuración de secciones claras y accesibles pensadas para el consumidor final, priorizando la visibilidad de las redes sociales, ubicación y catálogo de servicios de regalos y papelería.</li>
-                        </ul>
-                    </div>
-                    <div class="content-block">
-                        <h4>Detalles Técnicos y Desarrollo</h4>
-                        <ul class="change-details-list">
-                            <li><strong>Maquetación y Despliegue:</strong> Construcción optimizada utilizando estándares web nativos y despliegue automatizado mediante GitHub Pages para garantizar tiempos de carga rápidos y alta disponibilidad.</li>
-                        </ul>
-                    </div>
-                    <div class="project-actions-group">
-                        <a href="https://github.com/lmmunetonp/papeleria-el-lapiz" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Ver Repositorio en GitHub →</a>
-                        <a href="https://lmmunetonp.github.io/papeleria-el-lapiz/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Visitar Sitio Web →</a>
+                    <div class="card-actions">
+                        <a href="https://github.com/lmmunetonp/papeleria-el-lapiz" target="_blank" rel="noopener noreferrer" class="link-btn">Código fuente</a>
+                        <a href="https://lmmunetonp.github.io/papeleria-el-lapiz/" target="_blank" rel="noopener noreferrer" class="link-btn primary-link">Explorar Sitio →</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Tarjeta 2: MyBand App -->
-            <div class="optimized-project-card">
-                <div class="card-image-wrapper">
-                    <img src="imag/MyBandPrev.png" alt="Evolución de la interfaz MyBand 2019 vs 2026" class="project-compact-img" loading="lazy">
+            <div class="project-card-cyber" data-category="ux">
+                <div class="project-img-box" data-fallback="MyBand Redesign — vista previa no disponible">
+                    <img src="imag/MyBandPrev.png" alt="Comparativa del rediseño de la app MyBand" loading="lazy">
                 </div>
-                <div class="card-content-wrapper">
-                    <div class="card-meta">
-                        <span class="badge">Rediseño de Producto</span>
-                        <span class="date">Evolución 2019 - 2026</span>
+                <div class="project-info-box">
+                    <div class="card-badges">
+                        <span class="tag-badge badge-blue">Rediseño de Producto</span>
+                        <span class="date-badge">Evolución</span>
                     </div>
-                    <h3>MyBand App: Rediseño Integral y Optimización</h3>
-                    <div class="content-block">
-                        <h4>Descripción</h4>
-                        <p class="project-narrative">Transformación completa de la experiencia móvil de MyBand. Este proyecto documenta el proceso de optimización de la interfaz, traduciendo un layout clásico de 2019, basado en bloques de color densos y estructuras rígidas hacia un sistema de diseño fluido, accesible y con una jerarquía visual limpia en 2026, optimizado para entornos de uso real.</p>
+                    <h3>MyBand App: Rediseño Integral</h3>
+                    <p class="project-desc">Transformación completa de la experiencia móvil. Evolución de un layout clásico con bloques rígidos (2019) hacia un sistema de diseño fluido, accesible y con jerarquía visual óptima (2026).</p>
+                    <div class="tech-tags-list">
+                        <span>Figma Design System</span><span>UX Research</span><span>Arquitectura de Información</span>
                     </div>
-                    <div class="content-block">
-                        <h4>Detalles de Diseño y UX</h4>
-                        <ul class="change-details-list">
-                            <li><strong>Estrategia de Interfaz:</strong> Paleta clara optimizada para uso nocturno con acentos vibrantes, iconos estandarizados con trazados finos y esquinas suaves para mayor fluidez.</li>
-                            <li><strong>Arquitectura de Información:</strong> Jerarquía visual más limpia para la gestión de eventos complejos, simplificación de flujos lógicos y accesibilidad móvil mejorada.</li>
-                        </ul>
-                    </div>
-                    <div class="content-block">
-                        <h4>Detalles Técnicos y Desarrollo</h4>
-                        <ul class="change-details-list">
-                            <li><strong>Estructura del Sistema:</strong> Documentación y maquetación de flujos lógicos traducidos a componentes interactivos reutilizables con un enfoque centrado en la viabilidad técnica.</li>
-                        </ul>
-                    </div>
-                    <div class="project-actions-group">
-                        <a href="https://www.figma.com/proto/UbY2f8ttZZOGUg1AMJUkgR/MyBand2019?t=M1OBMrjTgULp6ZXZ-1" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Ver Origen (2019) →</a>
-                        <a href="https://www.figma.com/proto/sdjtPXQbsetrt001sl57oq/MyBand2026?node-id=0-1&t=4xrKxumz3uqaXJu0-1" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Ver Rediseño (2026) →</a>
+                    <div class="card-actions">
+                        <a href="https://www.figma.com/proto/UbY2f8ttZZOGUg1AMJUkgR/MyBand2019?t=M1OBMrjTgULp6ZXZ-1" target="_blank" rel="noopener noreferrer" class="link-btn">Origen 2019</a>
+                        <a href="https://www.figma.com/proto/sdjtPXQbsetrt001sl57oq/MyBand2026?node-id=0-1&t=4xrKxumz3uqaXJu0-1" target="_blank" rel="noopener noreferrer" class="link-btn primary-link">Ver Prototipo 2026 →</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Tarjeta 3: QuickClicker -->
-            <div class="optimized-project-card">
-                <div class="card-image-wrapper">
-                    <img src="imag/QuickClickerPrev.png" alt="Interfaz del proyecto QuickClicker" class="project-compact-img" loading="lazy">
+            <div class="project-card-cyber" data-category="dev">
+                <div class="project-img-box" data-fallback="QuickClicker QR — vista previa no disponible">
+                    <img src="imag/QuickClickerPrev.png" alt="Interfaz del generador de códigos QR QuickClicker" loading="lazy">
                 </div>
-                <div class="card-content-wrapper">
-                    <div class="card-meta">
-                        <span class="badge">Desarrollo Web & Servicios</span>
-                        <span class="date">Proyecto de Portafolio</span>
+                <div class="project-info-box">
+                    <div class="card-badges">
+                        <span class="tag-badge badge-purple">Desarrollo Web &amp; Servicios</span>
+                        <span class="date-badge">Utilidad</span>
                     </div>
-                    <h3>QuickClicker: Generador Dinámico de Códigos QR</h3>
-                    <div class="content-block">
-                        <h4>Descripción</h4>
-                        <p class="project-narrative">Desarrollo e implementación de una aplicación web funcional orientada a la utilidad digital inmediata. QuickClicker es una herramienta ágil que permite la generación en tiempo real de códigos QR personalizados, diseñada bajo una filosofía de fricción mínima para el usuario y tiempos de respuesta instantáneos.</p>
+                    <h3>QuickClicker: Generador Dinámico de QR</h3>
+                    <p class="project-desc">Aplicación web enfocada en la utilidad inmediata y la fricción cero. Generación asíncrona de códigos QR personalizados con descarga directa en un solo clic.</p>
+                    <div class="tech-tags-list">
+                        <span>JavaScript ES6</span><span>Procesamiento Asíncrono</span><span>UI Responsiva</span>
                     </div>
-                    <div class="content-block">
-                        <h4>Detalles de Diseño y UX</h4>
-                        <ul class="change-details-list">
-                            <li><strong>Patrones de Interacción:</strong> Interfaz limpia basada en micro-interacciones responsivas que guían el flujo de generación y descarga del archivo en un solo clic.</li>
-                        </ul>
-                    </div>
-                    <div class="content-block">
-                        <h4>Detalles Técnicos y Desarrollo</h4>
-                        <ul class="change-details-list">
-                            <li><strong>Stack e Implementación:</strong> Construido con HTML semántico estructurado, hojas de estilo CSS modulares y lógica de procesamiento asíncrono en JavaScript nativo.</li>
-                        </ul>
-                    </div>
-                    <div class="project-actions-group">
-                        <a href="https://github.com/lmmunetonp/instant-qr-generator" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Ver Repositorio en GitHub →</a>
+                    <div class="card-actions">
+                        <a href="https://github.com/lmmunetonp/instant-qr-generator" target="_blank" rel="noopener noreferrer" class="link-btn primary-link">Ver Repositorio →</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Tarjeta 4: Simulador Junta de Agua La Regina -->
-            <div class="optimized-project-card">
-                <div class="card-image-wrapper">
-                    <img src="imag/JuntaAguaPrev.png" alt="Interfaz del simulador de consumo de agua" class="project-compact-img" loading="lazy">
+            <div class="project-card-cyber" data-category="comunidad">
+                <div class="project-img-box" data-fallback="Simulador Junta de Agua — vista previa no disponible">
+                    <img src="imag/JuntaAguaPrev.png" alt="Simulador de consumo de agua para la Junta de Agua de Julimes" loading="lazy">
                 </div>
-                <div class="card-content-wrapper">
-                    <div class="card-meta">
-                        <span class="badge">Desarrollo Web & Utilidades</span>
-                        <span class="date">Proyecto Comunitario 2025</span>
+                <div class="project-info-box">
+                    <div class="card-badges">
+                        <span class="tag-badge badge-green">Proyecto Comunitario</span>
+                        <span class="date-badge">Impacto Social</span>
                     </div>
-                    <h3>Simulador de Consumo: Junta de Agua La Regina</h3>
-                    <div class="content-block">
-                        <h4>Descripción</h4>
-                        <p class="project-narrative">Desarrollo de una aplicación web interactiva diseñada para la comunidad de La Regina, Julimes. Permite a los usuarios simular de forma transparente su consumo de agua estimando costos, e incluye un formulario de contacto directo para agilizar la comunicación y resolver dudas con la junta local.</p>
+                    <h3>Simulador de Consumo: Junta de Agua</h3>
+                    <p class="project-desc">Utilidad cívica interactiva para procesar variables de consumo de agua estimando costos con total transparencia, simplificando flujos para ciudadanos de la región de Julimes.</p>
+                    <div class="tech-tags-list">
+                        <span>Lógica en JS</span><span>Accesibilidad Ciudadana</span><span>CSS Semántico</span>
                     </div>
-                    <div class="content-block">
-                        <h4>Detalles de Diseño y UX</h4>
-                        <ul class="change-details-list">
-                            <li><strong>Usabilidad Centrada en el Ciudadano:</strong> Diseño de formularios simplificados y controles visuales predictivos para que cualquier usuario pueda calcular su consumo e interactuar sin complicaciones.</li>
-                        </ul>
-                    </div>
-                    <div class="content-block">
-                        <h4>Detalles Técnicos y Desarrollo</h4>
-                        <ul class="change-details-list">
-                            <li><strong>Lógica e Implementación:</strong> Desarrollado con HTML estructural, estilos CSS limpios y algoritmos matemáticos en JavaScript nativo para procesar las variables de consumo instantáneamente.</li>
-                        </ul>
-                    </div>
-                    <div class="project-actions-group">
-                        <a href="https://github.com/lmmunetonp/water-consumption-simulator" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Ver Repositorio en GitHub →</a>
+                    <div class="card-actions">
+                        <a href="https://github.com/lmmunetonp/water-consumption-simulator" target="_blank" rel="noopener noreferrer" class="link-btn primary-link">Ver Código Comunitario →</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Tarjeta 5: Mi Oficina -->
-            <div class="optimized-project-card">
-                <div class="card-image-wrapper">
-                    <img src="imag/MiOficinaPrev.png" alt="Propuesta visual dashboard Mi Oficina" class="project-compact-img" loading="lazy">
+            <div class="project-card-cyber" data-category="ux">
+                <div class="project-img-box" data-fallback="Mi Oficina Dashboard — vista previa no disponible">
+                    <img src="imag/MiOficinaPrev.png" alt="Propuesta de optimización del Dashboard Mi Oficina" loading="lazy">
                 </div>
-                <div class="card-content-wrapper">
-                    <div class="card-meta">
-                        <span class="badge">Rediseño de Producto</span>
-                        <span class="date">Propuesta 2024</span>
+                <div class="project-info-box">
+                    <div class="card-badges">
+                        <span class="tag-badge badge-blue">Rediseño de Producto</span>
+                        <span class="date-badge">Propuesta 2024</span>
                     </div>
                     <h3>Mi Oficina: Optimización de Dashboard "Al Día"</h3>
-                    <div class="content-block">
-                        <h4>Descripción</h4>
-                        <p class="project-narrative">Desarrollo de 3 propuestas de mejora visual para consolidar los indicadores críticos de gestión. El objetivo fue transformar la vista de inicio "Al Día" en una pantalla de alta densidad de información, permitiendo la toma de decisiones rápidas sin necesidad de navegación profunda.</p>
+                    <p class="project-desc">Desarrollo de 3 propuestas de mejora visual para consolidar indicadores críticos de gestión, transformando la vista de inicio en una pantalla de alta densidad de información para decisiones rápidas sin navegación profunda.</p>
+                    <div class="tech-tags-list">
+                        <span>Jerarquía Visual</span><span>Centralización de Datos</span><span>Estructura de Lienzo</span>
                     </div>
-                    <div class="content-block">
-                        <h4>Detalles de Diseño y UX</h4>
-                        <ul class="change-details-list">
-                            <li><strong>Jerarquía Visual:</strong> Implementación de pesos tipográficos y contraste estratégico para priorizar los indicadores financieros clave.</li>
-                            <li><strong>Centralización de Datos:</strong> Integración limpia de métricas de ganancia, pendientes y saldos actuales en un único lienzo interactivo.</li>
-                        </ul>
+                    <div class="card-actions">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="link-btn primary-link">Ver Propuesta de Diseño →</a>
                     </div>
-                    <div class="content-block">
-                        <h4>Detalles Técnicos y Desarrollo</h4>
-                        <ul class="change-details-list">
-                            <li><strong>Estructura del Lienzo:</strong> Diseño de layouts de alta densidad de información estructurados de forma modular, listos para integrarse limpiamente con entornos de desarrollo frontend.</li>
-                        </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="toolkit-section" id="stack">
+            <span class="section-eyebrow" style="text-align:center;">// 03. herramientas</span>
+            <h2 class="toolkit-title">Stack Tecnológico &amp; Toolkit Operativo</h2>
+            <p class="toolkit-subtitle">Herramientas y tecnologías integradas en mi flujo de trabajo de ingeniería y diseño</p>
+
+            <div class="toolkit-marquee-wrapper">
+                <div class="marquee-track">
+                    <div class="tool-item" title="HTML5">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5" loading="lazy">
+                        <span>HTML5</span>
                     </div>
-                    <div class="project-actions-group">
-                        <a href="https://www.figma.com/proto/XYMrkfX8Wz9wAYgzBretNi/Redise%C3%B1o-MiOficina--copia-?node-id=133-4450&t=1DBlO3ITWiSiezr2-1" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Ver Propuesta de Diseño →</a>
+                    <div class="tool-item" title="CSS3">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3" loading="lazy">
+                        <span>CSS3</span>
+                    </div>
+                    <div class="tool-item" title="JavaScript ES6">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" loading="lazy">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="tool-item" title="Python">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" loading="lazy">
+                        <span>Python</span>
+                    </div>
+                    <div class="tool-item" title="C++">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="C++" loading="lazy">
+                        <span>C++</span>
+                    </div>
+                    <div class="tool-item" title="Visual Studio Code">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="VS Code" loading="lazy">
+                        <span>VS Code</span>
+                    </div>
+                    <div class="tool-item" title="Figma">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma" loading="lazy">
+                        <span>Figma</span>
+                    </div>
+                    <div class="tool-item" title="FigJam">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 8px;">
+                            <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" fill="#F24E1E" fill-opacity=".15"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5 7a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0zM11.5 12a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0zm0 5a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0zm5-5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0zm.5 5a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0z" fill="#F24E1E"/>
+                        </svg>
+                        <span>FigJam</span>
+                    </div>
+                    <div class="tool-item" title="Atlassian JIRA">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg" alt="Jira" loading="lazy">
+                        <span>Jira</span>
+                    </div>
+                    <div class="tool-item" title="Microsoft Office 365">
+                        <svg width="26" height="26" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 8px;">
+                            <rect width="10.5" height="10.5" fill="#F25022"/>
+                            <rect x="12.5" width="10.5" height="10.5" fill="#7FBA00"/>
+                            <rect y="12.5" width="10.5" height="10.5" fill="#00A4EF"/>
+                            <rect x="12.5" y="12.5" width="10.5" height="10.5" fill="#FFB900"/>
+                        </svg>
+                        <span>Office 365</span>
+                    </div>
+
+                    <div class="tool-item" aria-hidden="true" title="HTML5">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5" loading="lazy">
+                        <span>HTML5</span>
+                    </div>
+                    <div class="tool-item" aria-hidden="true" title="CSS3">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3" loading="lazy">
+                        <span>CSS3</span>
+                    </div>
+                    <div class="tool-item" aria-hidden="true" title="JavaScript ES6">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" loading="lazy">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="tool-item" aria-hidden="true" title="Python">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" loading="lazy">
+                        <span>Python</span>
+                    </div>
+                    <div class="tool-item" aria-hidden="true" title="C++">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="C++" loading="lazy">
+                        <span>C++</span>
+                    </div>
+                    <div class="tool-item" aria-hidden="true" title="Visual Studio Code">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="VS Code" loading="lazy">
+                        <span>VS Code</span>
+                    </div>
+                    <div class="tool-item" aria-hidden="true" title="Figma">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma" loading="lazy">
+                        <span>Figma</span>
+                    </div>
+                    <div class="tool-item" aria-hidden="true" title="FigJam">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 8px;">
+                            <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" fill="#F24E1E" fill-opacity=".15"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5 7a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0zM11.5 12a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0zm0 5a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0zm5-5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0zm.5 5a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0z" fill="#F24E1E"/>
+                        </svg>
+                        <span>FigJam</span>
+                    </div>
+                    <div class="tool-item" aria-hidden="true" title="Atlassian JIRA">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg" alt="Jira" loading="lazy">
+                        <span>Jira</span>
+                    </div>
+                    <div class="tool-item" aria-hidden="true" title="Microsoft Office 365">
+                        <svg width="26" height="26" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 8px;">
+                            <rect width="10.5" height="10.5" fill="#F25022"/>
+                            <rect x="12.5" width="10.5" height="10.5" fill="#7FBA00"/>
+                            <rect y="12.5" width="10.5" height="10.5" fill="#00A4EF"/>
+                            <rect x="12.5" y="12.5" width="10.5" height="10.5" fill="#FFB900"/>
+                        </svg>
+                        <span>Office 365</span>
                     </div>
                 </div>
             </div>
         </section>
-    </main>
+    </div>
 
     <footer>
-        <div class="container"><p>© 2026 — Diseñado y maquetado por Luis Mario Muñetón</p></div>
+        <div class="container footer-inner">
+            <div class="footer-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#stack">Stack</a>
+                <a href="https://github.com/lmmunetonp" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+            <p>© 2026 — Diseñado, maquetado y optimizado bajo ingeniería de UX por Luis Mario Muñetón</p>
+        </div>
     </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">↑</button>
+
+    <script>
+        // --- Filtro de proyectos ---
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                    btn.setAttribute('aria-pressed', 'false');
+                });
+                button.classList.add('active');
+                button.setAttribute('aria-pressed', 'true');
+
+                const filterValue = button.getAttribute('data-filter');
+                const cards = document.querySelectorAll('.project-card-cyber');
+
+                cards.forEach(card => {
+                    if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                        card.style.display = 'flex';
+                        setTimeout(() => card.style.opacity = '1', 50);
+                    } else {
+                        card.style.opacity = '0';
+                        setTimeout(() => card.style.display = 'none', 300);
+                    }
+                });
+            });
+        });
+
+        // --- Fallback elegante para imágenes rotas ---
+        document.querySelectorAll('.project-img-box img').forEach(img => {
+            img.addEventListener('error', () => {
+                img.closest('.project-img-box').classList.add('img-fallback');
+            });
+        });
+
+        // --- Menú móvil ---
+        const navToggle = document.getElementById('navToggle');
+        const cliLinks = document.getElementById('cliLinks');
+        navToggle.addEventListener('click', () => {
+            const isOpen = cliLinks.classList.toggle('open');
+            navToggle.setAttribute('aria-expanded', isOpen);
+        });
+        cliLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                cliLinks.classList.remove('open');
+                navToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // --- Resaltar enlace activo según la sección visible ---
+        const sections = ['inicio', 'proyectos', 'stack'].map(id => document.getElementById(id));
+        const navLinks = document.querySelectorAll('.nav-link');
+        const setActiveLink = () => {
+            let current = sections[0];
+            sections.forEach(sec => {
+                if (sec && window.scrollY >= sec.offsetTop - 120) current = sec;
+            });
+            navLinks.forEach(link => {
+                link.classList.toggle('active', link.getAttribute('href') === '#' + current.id);
+            });
+        };
+        window.addEventListener('scroll', setActiveLink, { passive: true });
+        setActiveLink();
+
+        // --- Botón volver arriba ---
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            backToTop.classList.toggle('visible', window.scrollY > 500);
+        }, { passive: true });
+        backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+        // --- Animación de entrada al hacer scroll (tarjetas de proyecto) ---
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+        document.querySelectorAll('.project-card-cyber').forEach(card => revealObserver.observe(card));
+    </script>
 </body>
 </html>
